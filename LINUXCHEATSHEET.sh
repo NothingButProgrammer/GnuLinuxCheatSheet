@@ -44,3 +44,36 @@ there are 5 main: xfce - for not very powerful computers, kde - a very great loo
 mate - something like cinnamon and GNOME at the same time. There are also window managers."
 #note: I will add the terminal cheat sheet later, this is the 0.0.3 version of the program
 #maybe a bit more ASCII arts
+
+echo "
+GNU/linux terminal is a very comfortable and amazing thing.
+note2: # is a comment, which means you don't need to write it with command.
+note3: sudo takes root permissions for a moment when you use it
+
+FILE SYSTEM
+pwd			#displays the current path
+ls			#shows the files in the folder
+cd foldername		#go to the folder (directory)
+cd ..			#exit the folder (directory)
+touch filename.txt	#create a file
+rm filename.txt   	#remove a file
+mkdir foldername	#create a folder
+rmdir foldername 	#remove a folder
+
+PERMISSIONS AND USERS
+note: root is the user with all permissions.
+sudo su -				#switch to the root user
+sudo su - username			# switch to user
+adduser username 		# add a user
+useradd username		# if another command which adds a user does not work use this one
+passwd 				#change password for current user
+sudo visudo 			#add user to sudo group (give user root permissions)
+
+INSTALLING SOFTWARE
+sudo apt install packagename								# install a program. Package is a program.
+sudo pacman -Sy packagename								#install a program on arch system
+
+wget https://github.com/fireship-io/threejs-scroll-animation-demo/blob/main/main.js	#download a file, note: 
+											#after 'wget' you also need to type the link to the file.
+wget -o threejstutorial.js https://github.com/fireship-io/threejs-scroll-animation-demo/blob/main/main.js 	#the -o parameter means that you are giving the file a custom name.
+"
